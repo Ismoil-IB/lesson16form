@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lesson 16</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header"></header>
+			<main class="main">
+				<form action="#">
+					<p>Form это главный отрибут для создания формы. <br> <span style="color: yellow;">Значения action- получатель данных формы.</span> <br><span style="color: rgb(135, 253, 0);">Method - это метод передачи данных. <br>Значения сврйсива Method get - значение по умолчанию, данные передаются в адресной строке,</span> <span style="color: rgb(135, 253, 0);"> <br>Method post - данные передаются скрытно enctype - тип данных. </span> <br> <span style="color: rgb(0, 253, 76);">Свойство enctype - это тип данных. значения (для передачи фалов, указываем multipart/form-data)  </span></p>
+					<p style="color: rgb(0, 223, 253); margin-top: 20px;">Тег input это поле для ввода данных  <br> Value свойство которое может заполнить поля для ввода <br> Name свойство котором называют тег input <br> Required свойство которое делает обязательным поле для ввода <br> Maxlength максимальое значения для ввода данных в поле input <br> Placeholder это свойство подписывает input указыват что нужно в вести в поле для ввода <br> Autocomplete отключает или включает возможность подсказыват браузеру <br> Checked зарания выберает один из значение <br> Disabled отключает исползования тега <br> Tabindex="" задаёт последовательность табуляции </p>
+					<input placeholder="Введите имя" maxlength="10" autocomplete="off" required name="username" value="" type="text">
+					<p style="color: rgb(139, 127, 241); margin-top: 20px;">Значения свойства type="number" ввод чисел</p>
+					<input placeholder="Введите число" maxlength="10" autocomplete="off" required name="number" value="" type="number">
+					<p style="color: rgb(139, 127, 241); margin-top: 20px;">Значения свойства type="tel" ввод номера телефона </p>
+					<input placeholder="Введите номер телефона" maxlength="10" autocomplete="off" required name="tel" value="" type="tel">
+					<p style="color: rgb(139, 127, 241); margin-top: 20px;">Значения свойства type="email" ввод электронной почты  </p>
+					<input placeholder="Введите электронную почту" maxlength="10" autocomplete="off" required name="tel" value="" type="email">
+					<p style="color: rgb(139, 127, 241); margin-top: 20px;">Значения свойства type="password" ввод пароля</p>
+					<input placeholder="Введите пароль" autocomplete="off" required name="password" value="" type="password">
+					<p style="color: rgb(139, 127, 241); margin-top: 20px;">Значения свойства type="file" загруска файла. <br> Multiple позволяет выбрать несколько файлов. <br> Accept=".jpg, .png" позволяет выбрать файлы определённого типа  </p>
+					<input  placeholder="Введите пароль" autocomplete="off"  name="file" accept=".jpg, .png" type="file">
+					<p style="color: rgb(139, 127, 241); margin-top: 20px;">Значения свойства type="date" календарь <br> type="datetime-local" календарь + время </p>
+					<input placeholder="Календарь" maxlength="10" autocomplete="off" required name="календарь" value="" type="datetime-local">
+					<p style="color: rgb(139, 127, 241); margin-top: 20px;">Значения свойства type="checkbox" выбор И-множественный выбор (чекбокс). Value передаёт значения yes, no или on, off </p>
+					<input placeholder="выбор" required name="Car" value="yes" type="checkbox"> Есть авто
+					<div>
+						<p style="color: rgb(139, 127, 241); margin-top: 20px;">Значения свойства type="radio" выбор ИЛИ-единичный выбор (радиокнопка). Свойство name должно быть одинаковое для одной группы радиокнопки</p>
+						<input placeholder="выбор" required name="sex" value="m" type="radio"> M
+						<input placeholder="выбор" required name="sex" value="f" type="radio"> Ж
+					</div>
+					<p style="color: rgb(139, 127, 241); margin-top: 20px; margin-bottom: 20px;">Тег Textarea изсолзуется для многострочных вводов данных</p>
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+					<p style="color: rgb(139, 127, 241); margin-top: 20px; margin-bottom: 20px;">Select Выподаюший список <br> Selected зарания показывает какой пункт можно выбрать <br> Multiple позволяет выбрать несколько вариантов выпадаюшего списка </p>
+					<select name="form[]" class="form">
+						<option value="1" selected="selected">Пункт №1</option>
+						<option value="2">Пункт №2</option>
+						<option value="3">Пункт №3</option>
+						<option value="4">Пункт №4</option>
+					</select>
+					<p style="color: rgb(139, 127, 241); margin-top: 20px; margin-bottom: 20px;">Тег button (кнопка). <br> Типы кнопки button: <br> type="button" обычная кнопка <br> type="reset" спросит заполненые поля <br> type="submit" отправка формы </p>
+					<button type="submit">Отправиьть</button>
+				</form>
+			</main>
+			<footer class="footer"></footer>
+		</div>
+	</body>
+</html>
